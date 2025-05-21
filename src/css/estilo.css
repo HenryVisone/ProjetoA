@@ -1,0 +1,81 @@
+/*reset base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ECE3DA;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background: #C28A5F;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    gap: 15px;
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+/*HOVER é uma pseudo-classe que realiza um efeito ao passar o mouse*/
+header nav ul li a:hover{
+    text-decoration: underline 5px #BEDFFF;
+}
+#conteudo{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+}
+main{
+    display: flex;
+    /*PERMITE QUE OS ITEMS FLEXIVEIS QUEBREM DE LINHA SE NÃO HOUVER ESPAÇO NA MESMA LINHA */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.produto{
+    width: 200px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #787878;
+    background-color: #C6C3BF;
+    border-radius: 20px;
+}
+.produto img{
+    width: 100%;
+    height: 125px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.preco{
+    font-weight: 700;
+    margin-top: 50px; 
+    text-align: center;
+    color:#000;
+    font-size: 1.7rem;
+}
+button{
+    background: #BEDFFF;
+    margin-top: 30px;
+    padding: 15px 45px;
+    border-radius: 30px;
+    margin-left: 17px;
+}
+button:hover{
+    background: #4d77a1;
+    color: #fff;
+    transition: color .1s;
+}

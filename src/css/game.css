@@ -1,0 +1,59 @@
+/*estilização game*/
+body{
+    background: black;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background: #94acc4;
+    color:#fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    gap:10px;
+}
+header nav ul li a{
+color:#fff;
+text-decoration: none;
+font-size: 1.4rem;
+}
+/*HOVER é uma pseudo-classe que realiza um efeito ao passar o mouse*/
+header nav ul li a:hover{
+    text-decoration: underline 5px #fff;
+}
+
+#conteudo{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;/*PERMITE QUE OS ITEMS FLEXIVEIS QUEBREM DE LINHA SE NÃO HOUVER ESPAÇO NA MESMA LINHA */
+    justify-content: center;
+}
+h1{
+    font-size: 40px;
+    color:crimson;
+    text-align: center;
+}
+
+p{
+    background-image: linear-gradient(to right,rgb(19, 19, 19),darkred);
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
